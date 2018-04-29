@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact form</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400|Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href="/public/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/public/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/public/stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+          <h2 class="text-dark" href="#">Contact Form</h2>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="text-muted" href="https://patrikmulato.github.io/">Patrik Mulato</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <form method="POST" action="send">
+        <!--  General -->
+        <div class="form-group">
+          <h2 class="heading full">Email us!</h2>
+          {{msg}}
+
+          <div class="controls half">
+            <input type="text" id="firstName" class="floatLabel" name="FirstName">
+            <label for="firstName">First Name</label>
+          </div>
+          <div class="controls half">
+            <input type="text" id="lastName" class="floatLabel" name="LastName">
+            <label for="lastName">Last Name</label>
+          </div>
+          <div class="controls full">
+            <input type="email" id="email" class="floatLabel" name="email">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <!--  Details -->
+        <div class="form-group">
+          <div class="controls full">
+            <input type="tel" id="cell" class="floatLabel" name="cell">
+            <label for="cell">Phone</label>
+          </div>
+          <div class="controls full">
+            <select class="floatLabel">
+              <option value="blank"></option>
+              <option value="Apple">Male</option>
+              <option value="Banana">Female</option>
+            </select>
+            <label for="fruit">Gender</label>
+          </div>
+        </div>
+        <!--  More -->
+        <div class="form-group">
+          <div class="controls full">
+            <textarea name="comments" class="floatLabel" id="comments"></textarea>
+            <label for="comments">Comments</label>
+            <button type="submit" class="full">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"  crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Own-->
+    <script type="text/javascript" src="/public/js/main.js"></script>
+  </body>
+
+</html>
