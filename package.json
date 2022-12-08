@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Patrikmulato/Float-Label-Form-with-Node-mail#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-handlebars": "^3.0.0",
     "nodemailer": "^4.6.4"
   }
